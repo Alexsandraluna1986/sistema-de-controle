@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <!--Meu CSS-->
+    <link rel="stylesheet" href="style.css">
+     <!--Meu BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Meu BOOTSTRAP icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- BOOTSTRAP JAVASCRIPT-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+
+<body  background="C:\Users\alexs\OneDrive\Área de Trabalho\sistema controle de estoque\fundo-branco6.webp">
+    <header >
+        <div  class="cabecalho">
+        <h1><i class="bi bi-controller"></i><span> </span>Sistema de Controle de Estoque</h1></div>
+    </header>
+
+    <div class="menu">
+      <nav class="navbar bg-light navbar-expand-sm">
+          <div class="container">
+              <a href="#" class="navbar-brand d-flex align-items-center"><i class="bi bi-controller me-2"></i>CONTROLE DE ESTOQUE</a>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav align-items-center">
+                      <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                      <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastrar Produtos</a></li>
+                      <li class="nav-item"><a class="nav-link" href="listaFuncionarios.html">Lista de Funcionários</a></li>
+                      <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+
+                  </ul>
+              </div>
+              <form class="d-flex">
+                  <div class="input-group">
+                      <input type="search" class="form-control me-2" placeholder="Buscar...">
+                      <button type="submit" class="btn btn-outline-success">Buscar</button>
+                  </div>
+              </form>
+          </div>
+      </nav>
+  </div>
+    <div class="container">
+        <h1>Controle de Estoque</h1><br><br>
+    </div>
+    <main>
+        <h2>Cadastrar Funcionário</h2>
+        <div class="botoes" id="botoesCadastro">
+            <form id="product-func">
+                <label for="funcionario-name">Nome do Funcionário</label>
+                <input type="text" id="funcionario-name" name="nomeFuncionário" required>
+                <label for="cargo-funcionario">Cargo</label>
+                <input type="text" id="cargo-funcionario" name="cargo" required><br>
+                <button type="submit">Adicionar Funcionário</button>
+            </form>
+        </div>
+  <div class="lista-funcionarios">
+    <h2>Lista de Funcionários</h2>
+      <ul id="listaFuncionarios"></ul>
+</div>
+
+    </main>
+   
+    <script src="funcoesfunc.js"></script>
+</body>
+</html>
